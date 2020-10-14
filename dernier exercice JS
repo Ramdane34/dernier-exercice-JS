@@ -1,0 +1,59 @@
+export class Book {
+    constructor(title, author, description, pages, currentPage, read) {
+        this.title = title;
+        this.author = author;
+        this.description = description;
+        this.pages = pages;
+        this.currentPage = 1;
+        this.read = false;
+    }
+ 
+    readBook(page) {
+        if (page < 1 || page > this.pages) {
+            return  0;
+ 
+        } else if (page >= 1 && page < this.pages) {
+            this.currentPage = page;
+            return  1;
+ 
+        } else if (page === this.pages) {
+            this.currentPage = page;
+            this.read = true;
+            return  1;
+       }
+ 
+    }
+ 
+};
+ 
+ 
+ 
+let myBook1 = new Book(
+    "TOME 1 ",
+    "Karen White",
+    "Longue descritpion",
+    70,
+    0,
+    false,
+);
+ 
+let myBook2 = new Book(
+    "Tome 2",
+    "Karen White",
+    "Courte descritpion",
+    190,
+    0,
+    false,
+);
+ 
+let myBook3 = new Book(
+    "Tome 3",
+    "Karen White",
+    "Moyenne descritpion",
+    25,
+    0,
+    false,
+);
+ 
+ 
+export const books = [myBook1, myBook2, myBook3];
