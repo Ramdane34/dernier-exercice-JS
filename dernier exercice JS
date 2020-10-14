@@ -1,4 +1,4 @@
-export class Book {
+export class Book { // vous etes sur  ???
     constructor(title, author, description, pages, currentPage, read) {
         this.title = title;
         this.author = author;
@@ -24,7 +24,7 @@ export class Book {
  
     }
  
-};
+}; // et ici ??
  
  
  
@@ -34,7 +34,7 @@ let myBook1 = new Book(
     "Longue descritpion",
     70,
     0,
-    false,
+    false, // tres etonnant ???
 );
  
 let myBook2 = new Book(
@@ -43,7 +43,7 @@ let myBook2 = new Book(
     "Courte descritpion",
     190,
     0,
-    false,
+    false, // encore tres etonnant ???
 );
  
 let myBook3 = new Book(
@@ -52,7 +52,7 @@ let myBook3 = new Book(
     "Moyenne descritpion",
     25,
     0,
-    false,
+    false, // encore tres etonnant ???
 );
  
  
